@@ -9,11 +9,11 @@
 [] Create at least one element using createElement.
 [] Use appendChild and/or prepend to add new elements to the DOM.
 [] Modify the HTML or text content of at least one element in response to user interaction using innerHTML, innerText, or textContent
-[] Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
+[x] Modify the style and/or CSS classes of an element in response to user interactions using the style or classList properties.
 [] Modify at least one attribute of an element in response to user interaction.
-[] Register at least two different event listeners and create the associated event handler functions.
+[x] Register at least two different event listeners and create the associated event handler functions.
 [] Use at least two Browser Object Model (BOM) properties or methods.
 [x] Include at least one form and/or input with HTML attribute validation.
-[] Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, but should include event-based validation in addition to the HTML attribute validation.)
+[x] Include at least one form and/or input with DOM event-based validation. (This can be the same form or input as the one above, but should include event-based validation in addition to the HTML attribute validation.)
 
 

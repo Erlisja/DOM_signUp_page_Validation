@@ -34,7 +34,7 @@ console.log(siblingElement);
 myForm.addEventListener("submit", function(event) {
     if (password.value!== confirmPassword.value) {
         event.preventDefault(); 
-        showCustomAlert('Passwords do not match');
+        alert("Passwords do not match");
     }
     
     });
@@ -64,3 +64,35 @@ confirmPassword.addEventListener("input", function(event){
     }
 });
 
+// Function to show the custom alert with a specific message
+function showCustomAlert(message) {
+    const alertBox = document.getElementById('custom-alert');
+    const alertMessage = document.getElementById('custom-alert-message');
+  
+    alertMessage.textContent = message; // Set the message
+    alertBox.style.display = 'block'; // Show the alert
+  }
+  
+  // Function to close the custom alert when the close buton is clicked
+  function closeCustomAlert() {
+    const alertBox = document.getElementById('custom-alert');
+    alertBox.style.display = 'none'; // Hide the alert
+  }
+
+// function to validate the username
+function validateUsername(){
+    const usernameValue = usernameField.value;
+    if (usernameValue.length < 4){
+        
+        showCustomAlert("Username must be at least 4 characters long");
+    }
+    // check if the username contains any special characters
+    else if (!/^[a-zA-Z0-9]+$/.test(usernameValue)){
+        showCustomAlert("Username can only contain letters and numbers");
+    }
+    else {
+        closeCustomAlert();
+    }
+}
+// this will validate the username when the user stops typing in the field
+usernameField.addEventListener("blur", validateUsername);

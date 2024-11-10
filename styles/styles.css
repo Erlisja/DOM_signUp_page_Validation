@@ -183,9 +183,9 @@ body.login-page {
     position: fixed;
     top: 70%;
     left: 15%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    background-color: #f9f9f9;
+    transform: translate(-50%, -50%) ;
+    width: 250px;
+   background: linear-gradient(180deg, #a20d0d6e, #f7f6f6);
     border: 2px solid #ad0d0d;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -194,15 +194,21 @@ body.login-page {
   }
   
   .custom-alert-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #100f0f;
+    font-weight: 600;
   }
   
   #custom-alert-close {
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: #ef0b0f;
     color: #fff;
     border: none;
+    max-width: fit-content;
     padding: 8px 8px;
     border-radius: 5px;
     cursor: pointer;
